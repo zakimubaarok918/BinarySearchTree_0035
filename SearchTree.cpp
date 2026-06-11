@@ -75,3 +75,35 @@ public:
                 currentNode = currentNode->rightchild;    
         }
     }    
+
+    void inorder(Node *currentNode)
+    {
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+
+        if (ptr != NULL)
+        {
+            inorder(currentNode->leftchild);
+            cout << currentNode->info << " ";
+            inorder(currentNode->rightchild);
+        }
+    }
+
+    void preorder(Node *currentNode)
+    {
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+
+        if (ptr != NULL)
+        {
+            cout << currentNode->info << " ";
+            preorder(currentNode->leftchild);
+            preorder(currentNode->rightchild);
+        }
+    }
