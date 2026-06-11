@@ -139,8 +139,20 @@ int main()
         cout << "3. Preorder Traversal" << endl;
         cout << "4. Postorder Traversal" << endl;
         cout << "5. Exit" << endl;
+        cout << "Enter your choice (1-5): ";
 
         char ch;
         cin >> ch;
 
         cout << endl;
+
+        switch (ch)
+        {
+        case  '1':
+            {
+                cout << "Enter a word: ";
+                string word;
+                cin >> word;
+                obj.insert(word);
+                break;
+            }      
