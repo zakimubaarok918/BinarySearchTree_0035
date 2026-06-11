@@ -17,3 +17,26 @@ public:
         rightchild = r;
     }
 };    
+
+class BinaryTree
+
+public:
+    Node *ROOT;
+
+    BinaryTree()
+    {
+        ROOT = NULL; // initializing ROOT to NULL
+    }
+
+    // insert a new node into the binary tree
+    void insert(string value)
+    {
+       Node *newNode = new Node(element, NULL, NULL);
+    
+       newNode->info = element;
+       newNode->leftchild = NULL;
+       newNode->rightchild = NULL;
+
+       Node *parent = NULL;
+       Node *currentNode = NULL;
+      
