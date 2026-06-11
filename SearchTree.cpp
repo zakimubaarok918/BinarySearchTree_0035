@@ -126,3 +126,21 @@ public:
         }
     }
 };    
+
+int main()
+{
+    BinaryTree obj;
+
+    while (true)
+    {
+        cout << "Menu" << endl;
+        cout << "1. Insert" << endl;
+        cout << "2. Inorder Traversal" << endl;
+        cout << "3. Preorder Traversal" << endl;
+        cout << "4. Postorder Traversal" << endl;
+        cout << "5. Exit" << endl;
+
+        char ch;
+        cin >> ch;
+
+        cout << endl;
