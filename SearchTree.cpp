@@ -162,4 +162,10 @@ int main()
                 obj.inorder(obj.ROOT);
                 cout << endl;
                 break;
-            }    
+            }   
+            
+       case '3':
+            {
+                obj.preorder(obj.ROOT);
+                break
+            }  
